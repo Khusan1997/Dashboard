@@ -3,6 +3,7 @@
     <Navbar />
     <Sidebar />
     <div class="content">Content</div>
+    <div class="content">Content</div>
     <!-- <router-view></router-view> -->
   </div>
 </template>
