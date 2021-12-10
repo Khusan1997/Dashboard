@@ -20,6 +20,5 @@ export default {};
 .title {
   color: white;
   font-size: 24px;
-  margin-top: 10px;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    asdasdsa
     <!-- <router-view />/ -->
   </div>
 </template>
