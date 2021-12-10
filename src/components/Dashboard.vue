@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Hugoo">
     <div class="sidebar"><Sidebar /></div>
     <div>
       <div class="header"><Navbar /></div>
@@ -27,6 +27,10 @@ export default {
 };
 </script>
 <style scoped>
+.Hugoo {
+  display: flex;
+  position: relative;
+}
 .sidebar {
   background-color: red;
   width: 400px;
@@ -35,6 +39,16 @@ export default {
 .header {
   background-color: green;
   height: 60px;
-  width: 100px;
+  width: 500px;
+}
+.main {
+  background-color: green;
+  height: 60px;
+  width: 500px;
+}
+.footer {
+  background-color: green;
+  height: 60px;
+  width: 500px;
 }
 </style>
