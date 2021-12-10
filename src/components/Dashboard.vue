@@ -5,11 +5,11 @@
     <div class="content">Content</div>
   </div> -->
   <div class="grid-container">
-    <div class="item1">Header</div>
-    <div class="item2"><Sidebar /></div>
-    <div class="item3">Main</div>
+    <div class="header">Header</div>
+    <div class="sidebar"><Sidebar /></div>
+    <div class="main">Main</div>
     <!-- <div class="item4">Right</div> -->
-    <div class="item5">Footer</div>
+    <div class="footer">Footer</div>
   </div>
 </template>
 <script>
@@ -39,26 +39,24 @@ export default {
   border-radius: 10px;
   margin: 6px 6px 6px 0px;
 } */
-.item1 {
+.header {
+  height: 7vh;
+  width: 78vw;
   grid-area: header;
 }
-.item2 {
+.sidebar {
   grid-area: menu;
-  height: 87vh;
+  height: 96vh;
   width: 20vw;
 }
-.item3 {
-  height: 76vh;
+
+.main {
+  height: 80vh;
   width: 78vw;
   grid-area: main;
 }
-.item4 {
-  height: 88vh;
-  width: 78vw;
-  grid-area: right;
-}
-.item5 {
-  height: 10vh;
+.footer {
+  height: 7vh;
   width: 78vw;
   grid-area: footer;
 }
@@ -66,7 +64,7 @@ export default {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header"
+    "menu header header header header header"
     "menu main main main right right"
     "menu footer footer footer footer footer";
   grid-gap: 10px;
