@@ -1,3 +1,5 @@
 <template>
-  <div style="margin-top: 200px">Salom</div>
+  <div style="background-color: white">
+    <p>HelloWorld</p>
+  </div>
 </template>

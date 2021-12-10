@@ -7,19 +7,20 @@
   <div class="grid-container">
     <div class="header">Header</div>
     <div class="sidebar"><Sidebar /></div>
-    <div class="main">Main</div>
-    <!-- <div class="item4">Right</div> -->
+    <div class="main"><Main /></div>
     <div class="footer">Footer</div>
   </div>
 </template>
 <script>
 // import Navbar from "../layouts/navbar.vue";
 import Sidebar from "../layouts/sidebar.vue";
+import Main from "../layouts/main.vue";
 
 export default {
   components: {
     // Navbar,
     Sidebar,
+    Main,
   },
   setup() {
     return {};
@@ -40,24 +41,17 @@ export default {
   margin: 6px 6px 6px 0px;
 } */
 .header {
-  height: 7vh;
-  width: 78vw;
   grid-area: header;
 }
 .sidebar {
   grid-area: menu;
-  height: 96vh;
-  width: 20vw;
+  height: 100%;
 }
 
 .main {
-  height: 80vh;
-  width: 78vw;
   grid-area: main;
 }
 .footer {
-  height: 7vh;
-  width: 78vw;
   grid-area: footer;
 }
 
@@ -65,17 +59,15 @@ export default {
   display: grid;
   grid-template-areas:
     "menu header header header header header"
-    "menu main main main right right"
+    "menu main main main main main"
     "menu footer footer footer footer footer";
-  grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
+  grid-gap: 1px;
+  background-color: #fffcfc;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(50, 144, 194, 0.8);
   text-align: center;
-  padding: 10px 0;
   font-size: 30px;
 }
 </style>
